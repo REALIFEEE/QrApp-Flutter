@@ -1,6 +1,6 @@
 # qr_code_scanner_and_generator_tutorial
 
-A new Flutter project.
+This is a flutter app that can scan or generate a QR code
 
 ## Getting Started
 
