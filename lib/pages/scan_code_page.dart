@@ -15,8 +15,13 @@ class _ScanCodePageState extends State<ScanCodePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: Colors.blue,
-        title: const Center(child: Text('Scan QR Code', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),)),
+        title: const Center(
+            child: Text(
+          'Scan QR Code',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+        )),
         actions: [
           IconButton(
             onPressed: () {

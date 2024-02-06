@@ -14,8 +14,8 @@ class _SplashState extends State<Splash> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(const Duration(seconds: 6),
-        () => Navigator.pushReplacementNamed(context, "/home"));
+    Timer(const Duration(seconds: 4),
+        () => Navigator.pushReplacementNamed(context, "/name"));
   }
 
   @override

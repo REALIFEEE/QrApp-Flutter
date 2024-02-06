@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner_and_generator_tutorial/pages/home.dart';
+import 'package:qr_code_scanner_and_generator_tutorial/pages/name.dart';
 import 'package:qr_code_scanner_and_generator_tutorial/pages/splash.dart';
 
 import 'pages/generate_code_page.dart';
@@ -18,13 +19,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+       iconTheme: const IconThemeData(
+        color: Colors.white
+       ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue.shade400,),
         useMaterial3: true,
       ),
       routes: {
         "/generate": (context) => const GenerateCodePage(),
         "/scan": (context) => const ScanCodePage(),
         "/home":(context) => const homepage(),
-        "/splash":(context) => const Splash()
+        "/splash":(context) => const Splash(),
+        "/name":(context) => const Name()
       },
       initialRoute: "/splash",
     );
